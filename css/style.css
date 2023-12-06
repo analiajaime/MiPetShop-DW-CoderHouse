@@ -1,0 +1,208 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+/* header */
+
+header {
+    background-color:  white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }
+
+.logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Nav Styles */
+
+nav {
+    background-color:white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #999;
+}
+
+/* Main */
+
+.portada {
+    width: 100%;
+    height: 80vh;
+    padding: 10px;
+    background: url(../img/foto3.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.portada h1 {
+    font-size: 50px;
+    color: white;
+    text-align: right;
+    margin-right: 10px;
+    padding-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.portada p {
+    font-size: 20px;
+    color: white;
+    width: 32vw;
+    position: relative;
+    left: 65%;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* botones index */
+
+.lineabotones {
+ align-items: center;
+    text-align: right;
+    padding: 10px 10px;
+    margin-top: 15px;
+  
+}
+
+button {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.boton-azul {
+    background-color: rgb(103, 165, 253);
+}
+
+.boton-azul:hover {
+    background-color: darkblue;
+}
+
+.boton-rojo {
+    background-color: rgb(141, 141, 141);
+}
+
+.boton-rojo:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.card:hover .text {
+    transform: scale(1.1);
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+.redes {
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.redes ul {
+    list-style-type: none;
+}
+
+.redes img {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+}
