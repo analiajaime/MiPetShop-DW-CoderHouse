@@ -323,3 +323,15 @@ footer p {
     height: 15px;
     margin: 0 10px;
 }
+
+/* servicios */
+
+.serviciosPortada img {
+    width: 100%;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px auto;
+}
+
+
