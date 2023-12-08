@@ -334,4 +334,29 @@ footer p {
     margin: 5px auto;
 }
 
+/* franquicias */
 
+.cardFranquicias {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cardFranquicias img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardFranquicias .textF {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: black;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease;
+}
