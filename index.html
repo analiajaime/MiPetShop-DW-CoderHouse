@@ -7,6 +7,8 @@
     <title>DW | Mi PetShop</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/huella.png" type="image/x-icon">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
 <!---COSAS QUE ME FALTAN-->
@@ -16,36 +18,74 @@
 <!---hacer un footer mas desarrollado y los links a las redes sociales-->
 <!---hacer un header mas desarrollado-->
 <!---hacer un main mas desarrollado-->
+<!---hacer un blog-->
+<!---banner arriba-->
+<!---stickit de whatsapp-->
+<!---hacer un carrito de compras-->
+<!---mapa en franquicias y en contacto-->
+<!---bootstrap con cards de producto-->
 <!---mejorar el formulario de contacto con otros tipos de imputs-->
+<!---hacer un formulario de login-->
+<!---hacer un formulario de registro-->
+<!---carrousel de imagenes-->
+<!---carrousel de testimonios-->
+<!---hacer un site / map con las franquicias-->
+
+
 
 
 <body>
     <header>
-        <div class="contenedorNavbar">
-            <div class="logo">
-                <img src="./img/huella.png" alt="logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/franquicias.html">Franquicias</a></li>
-                    <li><a href="./pages/turnos.html">Turnos</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        
+          <div class="logo">
+              <a class="navbar-brand" href="/index.html">Mi PetShop</a>
+          </div>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand active" href="/index.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pages/productosCarne.html">Alimento Carne</a></li>
+                    <li><a class="dropdown-item" href="./pages/productosPollo.html">Alimento Pollo</a></li>
+                    <li><a class="dropdown-item" href="./pages/productosRopa.html">Ropa</a></li>
+                    <li><a class="dropdown-item" href="./pages/productosJuguetes.html">Juguetes</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/franquicias.html">Franquicias</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/turnos.html">Turnos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            
     </header>
+    
     <main>
         <section class="portada">
             <h1>Mi PetShop</h1>
             <p>Somos una clínica veterinaria se caracteriza por contar con un equipo de veterinarios especializados en
-                diferentes áreas, como medicina general, cirugía, dermatología, odontología, cardiología, y
-                oftalmología, asegurando una atención completa y personalizada para cada mascota.</p>
+                diferentes áreas.</p>
             <div class="lineabotones">
                 <a href="./pages/turnos.html"><button class="boton-azul">Sacar turno</button></a>
-                <a href="./pages/turnos.html"><button class="boton-rojo">Ver servicios</button></a>
+                <a href="./pages/servicios.html"><button class="boton-rojo">Ver servicios</button></a>
             </div>
         </section>
         <section>
@@ -84,19 +124,32 @@
                 </div>
         </section>
 
-        <section>
-            <form class="formSusc">
-                <span class="title">Subscribe a nuestro newsletter.</span>
-                <p class="description">Si queres recibir nuestros consejos, novedades y mucha mas información...</p>
-                <div>
-                  <input placeholder="Enter your email" type="email" name="email" id="email-address">
-                  <button type="submit">Subscribite</button>
-                </div>
-              </form>
-        </section>
+       
     </main>
     <footer>
-        <div>
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+        <section>
             <div class="redes">
                 <a href="#"><img src="./img/facebook (1).png" alt="facebook"></a>
                 <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
@@ -105,8 +158,10 @@
             <div class="parrafoFooter">
                 <p>2020 Mi PetShop | Todos los derechos reservados</p>
             </div>
-        </div>
+        </section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 
